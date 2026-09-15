@@ -5,17 +5,18 @@ import { SiteShell } from "@/components/site-shell";
 
 export const metadata: Metadata = {
   title: {
-    default: "Quantum Axion — Open quantum research tools",
-    template: "%s | Quantum Axion",
+    default: "KET Studio — Open quantum research workspace",
+    template: "%s | KET Studio",
   },
   description:
-    "Open-source tools for visible, reproducible and accessible quantum computing research.",
-  keywords: ["quantum computing", "KET Studio", "Quantum Circuit", "open source"],
+    "KET Studio is an open-source Windows desktop workspace for visible and reproducible quantum experiments.",
+  keywords: ["quantum computing", "KET Studio", "Flutter", "Python", "open source"],
   openGraph: {
-    title: "Quantum Axion",
-    description: "Making quantum research visible, reproducible and open.",
+    title: "KET Studio",
+    description: "A Windows desktop workspace for visible and reproducible quantum experiments.",
     type: "website",
   },
+  icons: { icon: "/favicon.svg" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

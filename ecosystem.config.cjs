@@ -3,7 +3,7 @@ module.exports = {
     {
       name: "ketstudio-website",
       script: "npm",
-      args: "run start -- --hostname 127.0.0.1 --port 3000",
+      args: "run start -- --hostname 0.0.0.0 --port 3010",
       cwd: __dirname,
       env: {
         NODE_ENV: "production",

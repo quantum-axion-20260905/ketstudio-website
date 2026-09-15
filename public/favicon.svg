@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>KET Studio</title>
+  <rect width="64" height="64" rx="14" fill="#14151a"/>
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#7257ff" stroke-width="3"/>
+  <circle cx="32" cy="32" r="12" fill="none" stroke="#18c7db" stroke-width="3"/>
+  <circle cx="32" cy="32" r="4" fill="#ff7e53"/>
+</svg>

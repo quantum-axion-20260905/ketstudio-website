@@ -1,14 +1,15 @@
-# Quantum Axion Website
+# KET Studio Website
 
-Public-facing website for the Quantum Axion open-source ecosystem. It presents
-KET Studio and Quantum Circuit as distinct but interoperable projects, with
-Uzbek/English content, documentation, tutorials and grant positioning.
+Public product site for the KET Studio open-source Windows desktop research
+workspace. It provides Uzbek/English product copy, serious release notes,
+documentation, runnable tutorial templates, grant positioning and direct
+installer downloads.
 
 ## Local development
 
 ```powershell
 cd website
-npm install
+npm ci
 npm run dev
 ```
 
@@ -19,24 +20,25 @@ Open `http://localhost:3000`.
 ```powershell
 npm run lint
 npm run build
-npm run start
+npm run start -- --hostname 0.0.0.0 --port 3010
 ```
 
-The site is intentionally server-ready and does not require an API yet. It can
-also be converted to a static export later for GitHub Pages by enabling
-`output: "export"` in `next.config.ts`; server-only features would then remain
-disabled.
+For a Node.js server managed by PM2, use `ecosystem.config.cjs`. An Nginx
+reverse-proxy example is available at `deploy/nginx.conf.example`.
 
-For a Node.js server managed by PM2, use the included `ecosystem.config.cjs`.
-An Nginx reverse-proxy example is available at `deploy/nginx.conf.example`.
+## Release downloads
 
-## Content direction
+Place the verified Windows artifacts in `public/downloads/` using these stable
+names:
 
-- `/projects` explains the separate roles of the two products.
-- `/docs` describes the proposed OpenQASM and versioned JSON interoperability.
-- `/tutorials` provides runnable learning paths and points to the relevant tool.
-- `/grants` keeps the grant theses distinct while documenting the shared outcome.
+- `ket-studio-windows-x64.msix`
+- `ket-studio-windows-x64-setup.exe`
+- `ket-studio-msix-test-certificate.cer`
+- `SHA256SUMS.txt`
 
-The default language is Uzbek. The language toggle works across client-side
-navigation and is ready to be replaced by route-based localization when
-SEO-localized pages are needed.
+The `/downloads` page treats MSIX as primary and explains self-signed
+certificate trust. Linux and macOS are shown as planned platforms only until a
+real build, native terminal test and support policy exist.
+
+The public site does not run Python, access local files or open a PTY. Those
+capabilities belong to the Windows desktop application.
