@@ -13,7 +13,6 @@ export function SiteShell({ children }: Readonly<{ children: React.ReactNode }>)
     { href: "/docs", label: t.nav.docs },
     { href: "/tutorials", label: t.nav.tutorials },
     { href: "/downloads", label: t.nav.downloads },
-    { href: "/grants", label: t.nav.grants },
   ];
 
   return (

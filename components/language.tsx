@@ -31,11 +31,11 @@ export function useLanguage() {
 
 export const copy = {
   uz: {
-    nav: { projects: "Loyiha", docs: "Hujjatlar", tutorials: "Tutoriallar", downloads: "Yuklab olish", grants: "Grantlar" },
+    nav: { projects: "Loyiha", docs: "Hujjatlar", tutorials: "Tutoriallar", downloads: "Yuklab olish" },
     actions: { explore: "Loyihalarni ko‘rish", docs: "Hujjatlarni ochish", github: "GitHub’da ko‘rish", learn: "Batafsil", back: "Bosh sahifaga qaytish" },
   },
   en: {
-    nav: { projects: "Product", docs: "Docs", tutorials: "Tutorials", downloads: "Downloads", grants: "Grants" },
+    nav: { projects: "Product", docs: "Docs", tutorials: "Tutorials", downloads: "Downloads" },
     actions: { explore: "Explore projects", docs: "Open documentation", github: "View on GitHub", learn: "Learn more", back: "Back to home" },
   },
 } as const;

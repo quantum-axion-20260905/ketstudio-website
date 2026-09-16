@@ -11,7 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["/docs", "weekly", 0.95],
     ["/tutorials", "weekly", 0.9],
     ["/downloads", "weekly", 0.85],
-    ["/grants", "monthly", 0.75],
   ].map(([path, changeFrequency, priority]) => ({
     url: `${siteUrl}${path}`,
     lastModified,

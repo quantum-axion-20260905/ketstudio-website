@@ -2,8 +2,7 @@
 
 Public product site for the KET Studio open-source Windows desktop research
 workspace. It provides Uzbek/English product copy, serious release notes,
-documentation, runnable tutorial templates, grant positioning and direct
-installer downloads.
+documentation, runnable tutorial templates and direct installer downloads.
 
 ## Local development
 
