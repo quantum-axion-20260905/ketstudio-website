@@ -31,7 +31,7 @@ export function SiteShell({ children }: Readonly<{ children: React.ReactNode }>)
             <button className={language === "uz" ? "selected" : ""} onClick={() => setLanguage("uz")}>UZ</button>
             <button className={language === "en" ? "selected" : ""} onClick={() => setLanguage("en")}>EN</button>
           </div>
-          <a className="github-link" href="https://github.com/quantum-axion-20260905" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a className="github-link" href="https://github.com/quantum-axion-20260905/KET-Studio" target="_blank" rel="noreferrer" aria-label="KET Studio GitHub repository">GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </header>
       <main>{children}</main>
