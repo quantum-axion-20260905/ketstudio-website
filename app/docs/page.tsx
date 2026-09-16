@@ -62,6 +62,14 @@ const examples = [
     code: "import ket_viz\n\nket_viz.metrics({\n  'status': 'optimizing',\n  'step': 12, 'energy': -1.1372,\n  'seed': 20260914, 'backend': 'AerSimulator'\n})",
   },
   {
+    id: "text",
+    titleUz: "Text: izoh va status",
+    titleEn: "Text: notes and status",
+    descriptionUz: "Odam o‘qiydigan qisqa xabarni alohida text event sifatida chiqaring; exception uchun oddiy Python error’ni ham Terminal’da qoldiring.",
+    descriptionEn: "Send a human-readable note as a text event; keep Python exceptions visible in the Terminal for diagnosis.",
+    code: "import ket_viz\n\nket_viz.text('Simulation started')\n# Real exception bo‘lsa uni yashirmang:\n# raise RuntimeError('backend failed')",
+  },
+  {
     id: "estimator",
     titleUz: "Estimator: ish boshlashdan oldingi baho",
     titleEn: "Estimator: pre-run resource estimate",
