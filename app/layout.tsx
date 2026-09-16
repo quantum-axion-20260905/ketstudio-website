@@ -3,7 +3,7 @@ import "./globals.css";
 import { LanguageProvider } from "@/components/language";
 import { SiteShell } from "@/components/site-shell";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://169.58.123.200:3010";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ketstudio.space";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

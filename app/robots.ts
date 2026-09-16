@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://169.58.123.200:3010";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ketstudio.space";
 
 export default function robots(): MetadataRoute.Robots {
   return {
